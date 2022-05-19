@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    PARTIAL
+  </head>
+  <body class="container">
+    <header>PARTIAL</header>
+    <main>
+        <h1>This is great</h1>
+        <p>Welcome to templating using EJS</p>
+        <ul>
+          <% restaurants.forEach(({name}) => { %>
+          <li>
+            <strong><%= name %></strong>
+            %>
+          </li>
+          <% }); %>
+        </ul>
+    </main>
+    <footer>PARTIAL</footer>
+  </body>
+</html>
